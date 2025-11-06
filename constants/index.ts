@@ -1,4 +1,3 @@
-import images from "./assets";
-import icons from "./assets";
+import assets from './assets'
 
-export { images, icons };
+export { assets };

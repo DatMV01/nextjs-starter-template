@@ -9,6 +9,8 @@ import project6 from "@/public/images/project6.jpg";
 import project7 from "@/public/images/project7.jpg";
 import project8 from "@/public/images/project8.jpg";
 import project9 from "@/public/images/project9.jpg";
+import avatar from "@/public/images/avatar.png";
+import avatar2 from "@/public/images/avatar2.jpg";
 
 import applause from "@/public/assets/icons8-applause-64.png";
 import aws from "@/public/assets/icons8-aws-96.png";
@@ -43,6 +45,8 @@ const images = {
   project7,
   project8,
   project9,
+  avatar,
+  avatar2
 };
 
 const icons = {
