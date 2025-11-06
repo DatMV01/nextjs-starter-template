@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Main() {
   return (
     <>
-      <main className="font-sans flex min-h-screen w-full flex-col items-center justify-center gap-10">
+      <main className="flex min-h-screen w-full flex-col items-center justify-center gap-10">
         <div>Sample Text</div>
 
         <Image
