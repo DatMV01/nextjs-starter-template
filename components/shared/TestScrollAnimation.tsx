@@ -13,7 +13,7 @@ const TestScrollAnimation = () => {
   });
 
   return (
-    <div className="min-h-screen flex flex-col gap-10">
+    <div className="min-h-screen flex flex-col items-center justify-center gap-10">
       <p ref={bounceRef} className=" text-lg">
         Hieu Ung Bounce
       </p>

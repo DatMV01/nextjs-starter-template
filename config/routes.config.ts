@@ -26,3 +26,9 @@ export const adminRoutes = {
   ...protectedRoutes,
   ...adminRoutes,
 };
+
+// USAGE
+// import { appRoutes } from "@/config/routes.config";
+// import Link from "next/link";
+// <Link href={appRoutes.dashboard}>Go to Dashboard</Link>
+

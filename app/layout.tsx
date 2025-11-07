@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Ovo } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/context";
-import { Footer, Header } from "@/components";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,8 +20,8 @@ const ovo = Ovo({
 });
 
 export const metadata: Metadata = {
-  title: "DatMai - Portfolio",
-  description: "DatMai - Portfolio",
+  title: "Nextjs-Starter-Template",
+  description: "Nextjs - Description",
   keywords: [
     "DatMai",
     "DatMV",
@@ -61,11 +60,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${ovo.variable} font-ovo antialiased`}
       >
-        <ThemeProvider>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-        </ThemeProvider>
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

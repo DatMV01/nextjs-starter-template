@@ -1,24 +1,27 @@
-import { TestScrollAnimation } from "@/components";
-import Image from "next/image";
+import {
+  AboutSection,
+  ContactSection,
+  Footer,
+  Header,
+  ProjectSection,
+  ScrollSpyNav,
+  NavData,
+  TestScrollAnimation,
+} from "@/components";
 
 export default function Main() {
   return (
     <>
-      <main className="flex min-h-screen w-full flex-col items-center justify-center gap-10">
-        <div>Sample Text</div>
-
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
+      <Header />
+      <main>
+        <AboutSection />
+        <ProjectSection />
+        <ContactSection />
+        <TestScrollAnimation />
       </main>
+      <Footer />
 
- 
-     <div className="flex flex-col justify-center items-center"> <TestScrollAnimation /></div>
+      <ScrollSpyNav items={NavData} offset={70} />
     </>
   );
 }

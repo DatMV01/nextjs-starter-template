@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { ReactNode, ElementType } from "react";
+import { ElementType, ReactNode } from "react";
 
 interface ContainerProps extends React.HTMLAttributes<ElementType> {
   className?: string;
@@ -16,6 +16,7 @@ const Container = ({
   fluid = false,
   breakpoint,
   as: Comp = "div",
+  id,
 }: ContainerProps) => {
   const breakpoints = {
     sm: "max-w-screen-sm", // ~540px
@@ -32,7 +33,7 @@ const Container = ({
       : "max-w-[1320px]";
 
   return (
-    <Comp className={clsx("mx-auto w-full px-4", maxWidth, className)}>
+    <Comp className={clsx("mx-auto w-full px-4", maxWidth, className)} id={id}>
       {children}
     </Comp>
   );
