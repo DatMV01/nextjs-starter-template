@@ -19,11 +19,11 @@ const Container = ({
   id,
 }: ContainerProps) => {
   const breakpoints = {
-    sm: "max-w-[640px]",
-    md: "max-w-[768px]",
-    lg: "max-w-[1024px]",
-    xl: "max-w-[1280px]",
-    "2xl": "max-w-[1536px]",
+    sm: "max-w-screen-sm", // 40rem
+    md: "max-w-screen-md", // 48rem
+    lg: "max-w-screen-lg", // 64rem
+    xl: "max-w-screen-xl", // 80rem
+    "2xl": "max-w-screen-2xl", // 96rem
   };
 
   const maxWidth = fluid
