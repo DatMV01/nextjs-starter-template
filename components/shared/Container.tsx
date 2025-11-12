@@ -6,7 +6,7 @@ interface ContainerProps extends React.HTMLAttributes<ElementType> {
   children: ReactNode;
   fluid?: boolean;
   noPadding?: boolean;
-  breakpoint?: "sm" | "md" | "lg" | "xl" | "xxl";
+  breakpoint?: "sm" | "md" | "lg" | "xl" | "2xl";
   as?: React.ElementType;
 }
 
@@ -19,18 +19,18 @@ const Container = ({
   id,
 }: ContainerProps) => {
   const breakpoints = {
-    sm: "max-w-screen-sm", // ~540px
-    md: "max-w-screen-md", // ~720px
-    lg: "max-w-screen-lg", // ~960px
-    xl: "max-w-screen-xl", // ~1140px
-    xxl: "max-w-[1320px]", // ~Bootstrap 5.3
+    sm: "max-w-[640px]",
+    md: "max-w-[768px]",
+    lg: "max-w-[1024px]",
+    xl: "max-w-[1280px]",
+    "2xl": "max-w-[1536px]",
   };
 
   const maxWidth = fluid
     ? "max-w-none"
     : breakpoint
       ? breakpoints[breakpoint]
-      : "max-w-[1320px]";
+      : breakpoints["2xl"];
 
   return (
     <Comp className={clsx("mx-auto w-full px-4", maxWidth, className)} id={id}>
